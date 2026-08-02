@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = "my_secret_key"
+app.secret_key = "my_secrets"
 
 # ---------------- DATABASE ----------------
 
