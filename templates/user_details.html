@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Details</title>
+
+    <style>
+
+    body{
+        font-family:Arial;
+        background:#0F172A;
+        color:white;
+    }
+
+    .card{
+        width:450px;
+        margin:80px auto;
+        background:white;
+        color:black;
+        border-radius:10px;
+        padding:25px;
+        box-shadow:0 0 15px rgba(0,0,0,.4);
+    }
+
+    h2{
+        text-align:center;
+        color:#2563EB;
+    }
+
+    p{
+        font-size:18px;
+        margin:15px 0;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>User Details</h2>
+
+<p><b>ID :</b> {{ user[0] }}</p>
+
+<p><b>Name :</b> {{ user[1] }}</p>
+
+<p><b>Email :</b> {{ user[2] }}</p>
+
+<p><b>Contact :</b> {{ user[3] }}</p>
+
+<p><b>City :</b> {{ user[4] }}</p>
+
+</div>
+
+</body>
+</html>

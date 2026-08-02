@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit User</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0F172A,#1E3A8A,#0F172A);
+}
+
+.container{
+    width:450px;
+    margin:80px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+h2{
+    text-align:center;
+    color:#2563EB;
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    background:#2563EB;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#1D4ED8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Edit User</h2>
+
+<form action="/update_user/{{ user[0] }}" method="POST">
+
+<label>Name</label>
+<input
+type="text"
+name="name"
+value="{{ user[1] }}"
+required>
+
+<label>Email</label>
+<input
+type="email"
+name="email"
+value="{{ user[2] }}"
+required>
+
+<label>Contact</label>
+<input
+type="text"
+name="contact"
+value="{{ user[3] }}"
+required>
+
+<label>City</label>
+<input
+type="text"
+name="city"
+value="{{ user[4] }}"
+required>
+
+<button type="submit">
+Update User
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

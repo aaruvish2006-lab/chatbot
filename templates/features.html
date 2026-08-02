@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Features | AI Chatbot</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0F172A,#1E3A8A,#2563EB);
+    color:white;
+}
+
+/* Navbar */
+
+nav{
+    width:100%;
+    height:70px;
+    background:rgba(15,23,42,.95);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+    position:fixed;
+    top:0;
+    left:0;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#60A5FA;
+}
+
+/* Main */
+
+.container{
+    max-width:1100px;
+    margin:120px auto;
+    padding:20px;
+    text-align:center;
+}
+
+.container h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.container p{
+    color:#E2E8F0;
+    margin-bottom:50px;
+    font-size:18px;
+}
+
+/* Feature Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:30px;
+    transition:.3s;
+    border:1px solid rgba(255,255,255,.15);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
+}
+
+.card h2{
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.7;
+}
+
+/* Button */
+
+.btn{
+    display:inline-block;
+    margin-top:50px;
+    padding:15px 35px;
+    background:#2563EB;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1D4ED8;
+    transform:scale(1.05);
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#CBD5E1;
+    margin-top:50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+🤖 AI Chatbot
+</div>
+
+<ul>
+<li><a href="/chatbot">Home</a></li>
+<li><a href="/features">Features</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<div class="container">
+
+<h1>🚀 Powerful AI Features</h1>
+
+<p>
+Experience a smart AI assistant built to answer questions, help with coding, writing, learning, and much more.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h2>🤖 AI Chat</h2>
+<p>
+Have natural conversations with an intelligent AI assistant that understands your questions and provides helpful responses.
+</p>
+</div>
+
+<div class="card">
+<h2>⚡ Fast Responses</h2>
+<p>
+Receive quick and accurate answers powered by advanced AI models for a smooth chat experience.
+</p>
+</div>
+
+<div class="card">
+<h2>🔒 Secure Login</h2>
+<p>
+User authentication keeps your chatbot experience secure and protects access to your account.
+</p>
+</div>
+
+<div class="card">
+<h2>💻 Programming Help</h2>
+<p>
+Get assistance with Python, HTML, CSS, JavaScript, SQL, Flask, React, C++, and many other technologies.
+</p>
+</div>
+
+<div class="card">
+<h2>📚 Learning Support</h2>
+<p>
+Understand difficult concepts, prepare for exams, summarize notes, and improve your knowledge with AI guidance.
+</p>
+</div>
+
+<div class="card">
+<h2>✍️ Writing Assistant</h2>
+<p>
+Create emails, resumes, essays, reports, social media posts, and professional documents with ease.
+</p>
+</div>
+
+</div>
+
+<a href="/chatbot" class="btn">
+← Back to Chatbot
+</a>
+
+</div>
+
+<footer>
+
+© 2026 AI Chatbot | Designed with ❤️ using Flask & OpenAI
+
+</footer>
+
+</body>
+</html>

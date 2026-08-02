@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Chatbot | Login</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0F172A,#1E3A8A,#2563EB,#0F172A);
+    overflow:hidden;
+}
+
+/* Background Circles */
+
+.circle1{
+    position:absolute;
+    width:250px;
+    height:250px;
+    background:#60A5FA;
+    border-radius:50%;
+    top:-80px;
+    left:-80px;
+    filter:blur(70px);
+}
+
+.circle2{
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:#38BDF8;
+    border-radius:50%;
+    bottom:-120px;
+    right:-120px;
+    filter:blur(90px);
+}
+
+/* Login Card */
+
+.login-box{
+
+    width:420px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+/* Logo */
+
+.logo{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    background:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+/* Heading */
+
+h1{
+
+    color:white;
+
+    margin-bottom:10px;
+
+}
+
+p{
+
+    color:#E2E8F0;
+
+    margin-bottom:30px;
+
+}
+
+/* Inputs */
+
+.input-box{
+
+    width:100%;
+
+    margin-bottom:20px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+/* Button */
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    background:#2563EB;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+}
+
+/* Footer */
+
+.footer{
+
+    color:white;
+
+    margin-top:25px;
+
+    font-size:14px;
+
+}
+
+.footer a{
+
+    color:#93C5FD;
+
+    text-decoration:none;
+
+}
+
+.footer a:hover{
+
+    text-decoration:underline;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="circle1"></div>
+<div class="circle2"></div>
+
+<div class="login-box">
+
+<div class="logo">
+🤖
+</div>
+
+<h1>Welcome Back</h1>
+
+<p>Login to access your AI Assistant</p>
+
+<form method="POST">
+
+<div class="input-box">
+
+<input
+type="text"
+name="username"
+placeholder="👤 Username"
+required>
+
+</div>
+
+<div class="input-box">
+
+<input
+type="password"
+name="password"
+placeholder="🔒 Password"
+required>
+
+</div>
+
+<button type="submit">
+
+Login →
+
+</button>
+
+</form>
+
+<div class="footer">
+
+Need an account?
+<a href="#">Sign Up</a>
+
+</div>
+
+</div>
+
+</body>
+</html> 
